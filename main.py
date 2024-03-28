@@ -67,3 +67,27 @@ plt.legend()
 
 plt.tight_layout()
 plt.show()
+
+random_values = [-3.5, -1.2, 0, 2.8, -4.1, 1.5, -0.7, 3.2, -2.4, 4.6]
+
+for val in random_values:
+    print(f"Sigmoid({val}) = {sigmoid(val)}")
+
+
+
+random_values = [-3.5, -1.2, 0, 2.8, -4.1, 1.5, -0.7, 3.2, -2.4, 4.6]
+
+print("ReLU:")
+for val in random_values:
+    print(f"ReLU({val}) = {relu(val)}")
+
+print("\nLeaky ReLU:")
+for val in random_values:
+    print(f"Leaky ReLU({val}) = {leaky_relu(val)}")
+
+print("\nTanh:")
+for val in random_values:
+    print(f"Tanh({val}) = {tanh(val)}")
+
+
+    
